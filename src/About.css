@@ -1,0 +1,117 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;  
+    color: #001281; 
+    height: 100%;
+  }
+  
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffe9cc; /* Background color */
+  }
+  
+  .navbar {
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 2px solid black;
+    z-index: 1000;
+  }
+  
+  .navbar .logo img {
+    height: 70px;
+    width: auto;
+  }
+  
+  .navbar .nav-buttons button {
+    margin-left: 50px;
+    color: #001281;
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 12px 25px;
+  }
+  
+  .navbar .nav-buttons button:hover {
+    text-decoration: underline;
+  }
+  
+  .about-content {
+    padding-top: 80px; /* Ensure space below navbar */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto; 
+  }
+  
+  .about-section {
+    width: 80%;
+    max-width: 1000px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .about-box-title {
+    font-size: 2em;
+    color: #001281;
+    margin-bottom: 15px;
+  }
+  
+  .about-box {
+    width: 100%;
+    max-width: 1000px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 12px rgba(3, 16, 202, 0.5);
+    text-align: center;
+  }
+  
+  .about-box h4 {
+    font-size: 1.5em;
+    color: #001281;
+    margin-bottom: 15px;
+  }
+  
+  .about-image {
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+  }
+  
+  .about-box p {
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .image-placeholder {
+    width: 100%;
+    height: 200px; 
+    background-color: #ccc;
+    margin-bottom: 15px;
+    border-radius: 8px;
+  }
+  
+  .text-placeholder {
+    width: 100%;
+    height: 100px; 
+    background-color: #eee;
+    margin-bottom: 15px;
+    border-radius: 8px;
+  }
+  

@@ -1,0 +1,209 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  overflow: hidden;
+  color: #001281;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+
+.navbar .logo img {
+  height: 70px;
+  width: auto;
+}
+
+.navbar .nav-buttons button {
+  margin-left: 50px;
+  color: #001281;
+  background: none;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 12px 25px;
+}
+
+.navbar .nav-buttons button:hover {
+  text-decoration: underline;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 80px;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box-title {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  color: #001281;
+}
+
+.box {
+  width: 500px;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border: 1px solid black;
+}
+
+.large-box {
+  width: 600px; 
+  height: auto; /* Auto height to accommodate all buttons */
+}
+
+.box-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align buttons to the left */
+  width: 100%;
+  gap: 15px; /* Space out buttons evenly */
+}
+
+.course-button {
+  display: flex;
+  justify-content: space-between; /* Space between text and icon */
+  align-items: center;
+  width: 100%; /* Full width of the box */
+  background-color: transparent;
+  color: #001281;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.course-button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.icon {
+  height: 20px; /* Adjust icon size as needed */
+  width: 20px;
+}
+
+.upload-button-container {
+  margin-top: 20px;  /* Space above the button */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  width: 100%; /* Make the container take the full width of the box */
+}
+
+.upload-button {
+  background-color: white;
+  color: #ff8400; /* Orange font color */
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center; /* Center the text inside the button */
+}
+
+.upload-button:hover {
+  background-color: rgba(0, 0, 0, 0.05); /* Add a hover effect */
+}
+
+.hero-image {
+  width: 30%; /* Full width to span across the page */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure no extra spacing below the image */
+  margin-bottom: 50px; /* Adjust margin to align properly with the navbar */
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #001281;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background-color: #0044cc;
+}
+
+.pdf-viewer {
+  flex-grow: 1;
+  width: 100%;
+  border: none;
+}
+
+.publish-button {
+  background-color: white;
+  color: #e60101; /* Blue font color */
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center; /* Center the text inside the button */
+  margin-left: 10px; /* Add some spacing between buttons */
+}
+
+.publish-button:hover {
+  background-color: rgba(0, 0, 0, 0.05); /* Add a hover effect */
+}
